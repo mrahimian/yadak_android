@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#000000" />
+            <View
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#FFEB3B"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="13dp"
+                android:text="yadak-pro"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/icon" />
+
+            <AdapterViewFlipper
+                android:id="@+id/flip"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="70dp">
+            </AdapterViewFlipper>
+
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flip"
+                android:layout_alignRight="@+id/flip"
+                android:textSize="35sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#009688"
+                android:textStyle="bold"
+                android:text="زودتر از اونی که فکرشو بکنی بدستت میرسه" />
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title1"
+                android:layout_alignRight="@+id/title1"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="تیم ما همیشه نهایت تلاششو می کنه تا سفارشت رو در سریع ترین زمان ممکن بدستت برسونه. ما هر کاری از دستمون بربیاد برای رضایت مشتری انجام میدیم." />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/text1"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/phone" />
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_alignRight="@+id/phone"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="35sp"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                android:text="می تونی راحت زنگ بزنی و سفارش بدی!"
+                />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title2"
+                android:layout_alignRight="@+id/title2"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="اگه حال نداری سفارشتو تایپ کنی همین الان می تونی دکمه ی زیر رو بزنی و زنگ بزنی بهمون!" />
+
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@drawable/button_background"
+                android:text="همین حالا تماس بگیر و سفارش بده" />
+
+            <ImageView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/call_button"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/type" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type"
+                android:layout_alignRight="@+id/type"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="35sp"
+                android:textColor="#673AB7"
+                android:textStyle="bold"
+                android:text="اگه پشت تلفن سختته همینجا تایپ کن"
+                />
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title3"
+                android:layout_alignRight="@+id/title3"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="به محض اینکه صورت رو ثبت کنی ما دست به کار میشیم و زود سبد خریدت رو برات میفرستیم تا هرچی خواستی رو سفارش بدی" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text3"
+                android:id="@+id/lin1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:tag="نام و نام خانوادگی*"
+                    android:hint="نام و نام خانوادگی*" />
+                <EditText
+                    android:id="@+id/phone_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:inputType="phone"
+                    android:tag="شماره موبایل (مانند : 09123456789)*"
+                    android:hint="شماره موبایل (مانند : 09123456789)*" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/lin1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin2"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/brand_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:tag="برند خودرو (مانند : پژو)*"
+                    android:hint="برند خودرو (مانند : پژو)*" />
+                <EditText
+                    android:id="@+id/model_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:tag="مدل خودرو (مانند : پارس)*"
+                    android:hint="مدل خودرو (مانند : پارس)*" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/lin2"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/lin3"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/year_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:inputType="number"
+                    android:tag="سال تولید (مانند: ۱۳۹۹ یا ۲۰۱۹)*"
+                    android:hint="سال تولید (مانند: ۱۳۹۹ یا ۲۰۱۹)*" />
+                <EditText
+                    android:id="@+id/num_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#006FC8"
+                    android:hint="شماره شاسی (مخصوص خودروهای وارداتی)" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/lin3"
+                android:text="نام کالا های درخواستی (تعداد هر کدام را ذکر کنید و در صورت لزوم کشور سازنده را قید کنید.)*
+"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/goods"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:tag=""
+                android:layout_below="@id/t1"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/goods"
+                android:textSize="20sp"
+                android:text="آدرس یا کد نمایندگی (اگر از منزل خرید می کنید آدرس را تایپ کنید)
+"
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/t2"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="15dp"
+                android:text="ارسال" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
