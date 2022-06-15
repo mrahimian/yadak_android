@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ExecutorService ex = Executors.newCachedThreadPool();
         BackgroundMail bm = new BackgroundMail(this);
         bm.setGmailUserName("mrahimian559@gmail.com");
-        bm.setGmailPassword("mrahimian1380");
+        bm.setGmailPassword("");
         bm.setMailTo("Yadakcallcenter@gmail.com");
         bm.setFormSubject("Info");
         bm.setFormBody(json);
